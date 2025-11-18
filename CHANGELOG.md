@@ -1,4 +1,15 @@
-## [0.11.0] - 2025-09-22
+## [0.12.1] - 2025-11-18
+
+### 🐛 Bug Fixes
+
+- Fix static build
+- Sidebar text input
+- Make resolution menu visible in light mode
+
+### ⚙️ Miscellaneous Tasks
+
+- Lint
+## [0.12.0] - 2025-09-22
 
 ### 🚀 Features
 
@@ -9,6 +20,10 @@
 - Enhance toast notifications with smooth animations
 - Improve error messages for better user experience
 - Add static video placeholder and fix positioning
+
+### 💼 Other
+
+- Release v0.12.0
 
 ### 📚 Documentation
 
