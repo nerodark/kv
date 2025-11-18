@@ -81,3 +81,35 @@
   list-style: none;
   padding: 0.5em 1.5em 0.5em 2.5em;
 }
+
+/* Light theme styles for video quality menu */
+[data-theme="light"] .video-quality-menu {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .video-quality-menu li.selected {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1e40af;
+  font-weight: bold;
+}
+
+[data-theme="light"] .video-quality-menu li:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .video-quality-menu li .material-icons {
+  color: #1e40af;
+}
+
+[data-theme="light"] .video-quality-menu li.separator {
+  background: rgba(200, 200, 200, 0.6);
+}
+
+[data-theme="light"] .video-quality-menu .submenu {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
