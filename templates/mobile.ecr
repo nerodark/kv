@@ -42,7 +42,7 @@
         </h2>
         <details id="section-text" open>
           <summary><span class="material-icons">text_fields</span> Text Input</summary>
-          <form id="text-input-form" onsubmit="event.preventDefault(); sendText();">
+          <form id="text-input-form" onsubmit="event.preventDefault(); sendText(document.getElementById('text-input').value); document.getElementById('text-input').value = '';">
             <input type="text" id="text-input" placeholder="Type text to send..." maxlength="200">
             <button type="submit">Send</button>
           </form>
