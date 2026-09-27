@@ -6,15 +6,15 @@ shards:
 
   baked_file_handler:
     git: https://github.com/ralsina/baked_file_handler.git
-    version: 0.1.1
+    version: 0.1.5
 
   baked_file_system:
     git: https://github.com/ralsina/baked_file_system.git
-    version: 0.10.0+git.commit.beb373124c7a235cfb9cd94e36849d8168eaa04b
+    version: 0.11.1+git.commit.993f8f4505888486f19ed6aa2206eb02b046b125
 
   docopt:
     git: https://github.com/ralsina/docopt.cr.git
-    version: 0.2.1
+    version: 0.8.0
 
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
@@ -22,11 +22,11 @@ shards:
 
   kemal:
     git: https://github.com/kemalcr/kemal.git
-    version: 1.7.1
+    version: 1.14.0
 
   kemal-basic-auth:
     git: https://github.com/kemalcr/kemal-basic-auth.git
-    version: 1.0.0
+    version: 2.0.0
 
   opus:
     git: https://github.com/krthr/opus.git
