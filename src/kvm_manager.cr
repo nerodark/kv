@@ -399,8 +399,6 @@ class KVMManagerV4cr
     @mass_storage
   end
 
-<<<<<<< Updated upstream
-=======
   def send_key_usage(usage : UInt8, modifiers : Array(String) = [] of String)
     return {success: false, message: "Keyboard not available"} unless @keyboard_enabled
     return {success: false, message: "No keyboard device"} unless @keyboard_device
@@ -415,7 +413,6 @@ class KVMManagerV4cr
     end
   end
 
->>>>>>> Stashed changes
   def send_keys(keys : Array(String), modifiers : Array(String) = [] of String)
     # Track keys before sending to prevent duplicates
     keys.each do |key|

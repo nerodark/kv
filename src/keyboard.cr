@@ -140,6 +140,22 @@ module HIDKeyboard
     "kp-enter" => 0x58_u8,
   }
 
+  def self.create_keyboard_report(usages : Array(UInt8), modifiers : Array(String) = [] of String) : Bytes
+    report = Bytes.new(8, 0_u8)
+
+    modifiers.each do |mod|
+      if mod_val = KMOD[mod.downcase]?
+        report[0] |= mod_val
+      end
+    end
+
+    usages.first(6).each_with_index do |usage, index|
+      report[2 + index] = usage
+    end
+
+    report
+  end
+
   def self.create_keyboard_report(keys : Array(String), modifiers : Array(String) = [] of String) : Bytes
     report = Bytes.new(8, 0_u8)
     key_index = 0
